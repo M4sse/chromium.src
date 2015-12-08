@@ -64,6 +64,8 @@ OSInfo::OSInfo()
         version_ = VERSION_WIN8_1;
         break;
     }
+  } else if (version_number_.major == 10) {
+	  version_ = VERSION_WIN8_1;
   } else if (version_number_.major > 6) {
     NOTREACHED();
     version_ = VERSION_WIN_LAST;
